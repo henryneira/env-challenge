@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
-set -e
-
-minikube start -p walmart --memory 4g --cpus 2
+MINIKUBE_INSTANCE=$(minikube profile list | grep walmart)
+if [[ -z $MINIKUBE_INSTANCE ]]; then
+    echo "🥱  minikube profile walmart doesn't exists. let's create it"
+    minikube start -p walmart --memory=4g --cpus=2
+fi
 
 kubectl apply -f namespaces.yaml
 
