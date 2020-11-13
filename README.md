@@ -6,6 +6,7 @@
 * Prometheus
 * Grafana
 * Loki
+* Helm v3
 
 SRE
 * Microservicio(s)
