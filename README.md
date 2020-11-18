@@ -1,19 +1,24 @@
 # Base Environment for Every Challenge
 
 ## Requirements
-* Minikube `brew install minikube` | `apt install minikube`
+
+* Minikube `brew install minikube`
 * Kubectl `brew install kubectl`
 * Helm v3 `brew install helm`
+* Fly `brew install fly`
 
-## TODO:
-[] Concourse CI
+## TODO
+
+[x] Concourse CI
 [] Prometheus
 [] Grafana
-[] Loki
+[x] Loki
 
 SRE
+
 * Microservicio(s)
 
 DE
+
 * Kafka
 * Flink
