@@ -2,6 +2,9 @@ concourse:
   web:
     logLevel: debug
     externalUrl: "http://localhost:8080"
+    auth:
+      mainTeam:
+        localUser: walmart
 web:
   enabled: true
 worker:
