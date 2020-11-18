@@ -1,12 +1,15 @@
 # Base Environment for Every Challenge
 
+## Requirements
+* Minikube `brew install minikube` | `apt install minikube`
+* Kubectl `brew install kubectl`
+* Helm v3 `brew install helm`
+
 ## TODO:
-* Minikube
 * Concourse CI
 * Prometheus
 * Grafana
 * Loki
-* Helm v3
 
 SRE
 * Microservicio(s)

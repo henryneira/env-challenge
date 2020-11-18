@@ -1,1 +1,26 @@
-imageTag: "5.4.0"
+concourse:
+  web:
+    logLevel: debug
+    externalUrl: "http://192.168.99.100:30082"
+web:
+  enabled: true
+worker:
+  enabled: true
+persistence:
+  enabled: true
+  worker:
+    size: 5Gi
+postgresql:
+  enabled: true
+  postgresqlUsername: concourse
+  postgresqlPassword: concourse
+  postgresqlDatabase: concourse
+  persistence:
+    enabled: true
+    accessModes:
+      - ReadWriteOnce
+    size: 5Gi
+secrets:
+  create: true
+  teamAuthorizedKeys:
+  localUsers: "walmart:infinitus"
