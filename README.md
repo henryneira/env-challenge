@@ -6,10 +6,10 @@
 * Helm v3 `brew install helm`
 
 ## TODO:
-* Concourse CI
-* Prometheus
-* Grafana
-* Loki
+[] Concourse CI
+[] Prometheus
+[] Grafana
+[] Loki
 
 SRE
 * Microservicio(s)

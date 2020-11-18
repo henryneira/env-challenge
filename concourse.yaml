@@ -1,7 +1,7 @@
 concourse:
   web:
     logLevel: debug
-    externalUrl: "http://192.168.99.100:30082"
+    externalUrl: "http://localhost:8080"
 web:
   enabled: true
 worker:
