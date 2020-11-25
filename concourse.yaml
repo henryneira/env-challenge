@@ -1,7 +1,7 @@
 concourse:
   web:
     logLevel: debug
-    externalUrl: "http://localhost:8080"
+    externalUrl: "http://localhost:8089"
     auth:
       mainTeam:
         localUser: walmart
