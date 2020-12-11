@@ -14,11 +14,17 @@
 [] Grafana
 [x] Loki
 
-SRE
+## SRE
+
+### Challenge ideas
+1. Build microservice image using a Concourse pipeline
+2. Deploy and expose the microservice using the appropriate K8s constructs
+3. Setup prometheus to collect metrics from the microservice
+4. Setup loki to collect logs from microservice
 
 * Microservicio(s)
 
-DE
+## DE
 
 * Kafka
 * Flink
