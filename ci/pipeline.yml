@@ -1,0 +1,26 @@
+resources:
+- name: git-repo
+  type: git
+  source: {uri: "https://github.com/wurstmeister/kafka-docker"}
+
+jobs:
+- name: build-kafka-image
+  plan:
+  - get: git-repo
+    trigger: true
+  - task: build-task-image
+    privileged: true
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: vito/oci-build-task
+      inputs:
+      - name: git-repo
+      outputs:
+      - name: image
+      run:
+        path: build
+      params:
+        CONTEXT: git-repo 
